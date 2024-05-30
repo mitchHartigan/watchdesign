@@ -6,15 +6,15 @@ import { Header } from "../components/header/Header";
 import { Footer } from "../components/footer/Footer";
 import { MarkdownLoader } from "../components/markdown/loader";
 
-import WhyHostworksPath from "./WhyHostworks.md";
+import InventoryPath from "./Inventory.md";
 
-export default function WhyHostworks() {
+export default function LearnMore() {
   return (
     <Container>
       <Navbar />
       <Header />
       <CopyContainer>
-        <MarkdownLoader path={WhyHostworksPath} />
+        <MarkdownLoader path={InventoryPath} />
       </CopyContainer>
       <Footer />
     </Container>
@@ -31,12 +31,12 @@ const Container = styled.div`
 `;
 
 const CopyContainer = styled.div`
-  min-height: 90vh;
+  min-height: 70vh;
   max-width: 100vw;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 0px 70px 10px 55px;
 

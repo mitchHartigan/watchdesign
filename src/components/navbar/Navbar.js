@@ -16,7 +16,8 @@ export const Navbar = (props) => {
         <LinkContainer>
           <TextLinkContainer>
             <TextLink destination="/">Home</TextLink>
-            <TextLink destination="/why-hostworks">Why Hostworks</TextLink>
+            <TextLink destination="/learn-more">Learn More</TextLink>
+            <TextLink destination="/inventory">Inventory</TextLink>
             <ContactLink
               homepage={homepage}
               handleClick={() =>
@@ -25,7 +26,9 @@ export const Navbar = (props) => {
             >
               Contact
             </ContactLink>
-            <TextLink destination="/blog">Blog</TextLink>
+            <TextLink destination="https://www.linkedin.com/in/alexgoldberg/recent-activity/all/">
+              Blog
+            </TextLink>
           </TextLinkContainer>
         </LinkContainer>
         <LinkContainer>

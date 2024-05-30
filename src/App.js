@@ -5,8 +5,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { globalStyles } from "./globalStyles";
 
 import Homepage from "./pages/Homepage";
-import WhyHostworks from "./pages/WhyHostworks";
-import Blog from "./pages/blog/index";
+import LearnMore from "./pages/LearnMore";
+import Inventory from "./pages/Inventory";
 import history from "./history";
 
 function App() {
@@ -15,11 +15,11 @@ function App() {
       <Router history={history}>
         <Switch>
           <Route exact path="/" component={Homepage} />
-          <Route path="/why-hostworks">
-            <WhyHostworks />
+          <Route path="/learn-more">
+            <LearnMore />
           </Route>
-          <Route path="/blog">
-            <Blog />
+          <Route path="/inventory">
+            <Inventory />
           </Route>
         </Switch>
       </Router>
