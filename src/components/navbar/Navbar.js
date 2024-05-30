@@ -32,8 +32,8 @@ export const Navbar = (props) => {
           </TextLinkContainer>
         </LinkContainer>
         <LinkContainer>
-          <TextLink destination="mailto:sales@hostworkspromo.com">
-            sales@hostworkspromo.com
+          <TextLink destination="mailto:sales@watchdesign.com">
+            sales@watchdesign.com
           </TextLink>
           <IconLink
             iconSrc="/LinkedIn.png"

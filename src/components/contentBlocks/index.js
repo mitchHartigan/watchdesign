@@ -4,8 +4,8 @@ import styled from "styled-components";
 import { Summary } from "./Summary";
 
 const visitorData = {
-  imgSrc: "mug_img.png",
-  imgAlt: "mug image",
+  imgSrc: "new_era_watch.png",
+  imgAlt: "watch image",
   title: "Get more visitor engagement.",
   description:
     "Proven solutions for visitor engagement. These items are proven to be more highly valued and kept longer. Use to promote mobile engagement, multiple impressions and referrals over many YEARS.",
@@ -15,7 +15,7 @@ const visitorData = {
 
 // link to main Graphics Package page once it has been updated by SAGE team.
 const impressionData = {
-  imgSrc: "impression.png",
+  imgSrc: "engineering.png",
   imgAlt: "Eugene Oasis branded products.",
   title: "Make a lasting impression.",
   description:
@@ -26,7 +26,7 @@ const impressionData = {
 };
 
 const referralsData = {
-  imgSrc: "referalls.png",
+  imgSrc: "astro_watch.png",
   imgAlt: "Eugene Oasis logo converting to 5 star reviews",
   title: "Get more visitor referrals.",
   description:

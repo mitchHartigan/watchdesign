@@ -6,7 +6,7 @@ import { FadeIn } from "..//FadeIn";
 
 export const HeroCopy = () => {
   function handleRedirect() {
-    const locationStr = "why-hostworks";
+    const locationStr = "learn-more";
     window.location.href = locationStr;
   }
 
@@ -14,26 +14,24 @@ export const HeroCopy = () => {
     <Container>
       <TitleContainer>
         <FadeIn delay="300" visible>
-          <ImgCenterer>
-            <Title src="full_name_logo.png" alt="Full name logo." />
-          </ImgCenterer>
+          <HeroTitle>WatchDesign</HeroTitle>
         </FadeIn>
         <FadeIn delay="500" visible>
-          <Subtitle>Elevate the guest experience.</Subtitle>
+          <Subtitle>Timeless Technology.</Subtitle>
         </FadeIn>
         <FadeIn delay="700" visible>
-          <Button handleClick={handleRedirect}>Find out how</Button>
+          <Button handleClick={handleRedirect}>Learn More</Button>
         </FadeIn>
       </TitleContainer>
     </Container>
   );
 };
 
-const ImgCenterer = styled.div`
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+const HeroTitle = styled.p`
+  margin: 10px 0px 10px 0px;
+  font-weight: medium;
+  font-size: 4rem;
+  font-family: ${(props) => props.theme.font};
 `;
 
 const Container = styled.div`
