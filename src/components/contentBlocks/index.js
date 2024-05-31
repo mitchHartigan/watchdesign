@@ -8,7 +8,7 @@ const visitorData = {
   imgAlt: "watch image",
   title: "Get more visitor engagement.",
   description:
-    "Proven solutions for visitor engagement. These items are proven to be more highly valued and kept longer. Use to promote mobile engagement, multiple impressions and referrals over many YEARS.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam libero augue, maximus efficitur mauris sollicitudin tempus. Phasellus consequat purus blandit eleifend posuere. Ut non arcu lobortis.",
   buttonText: "Browse our products",
   buttonLink: "https://hostworkspromo.orders.com/",
 };
@@ -19,10 +19,8 @@ const impressionData = {
   imgAlt: "Eugene Oasis branded products.",
   title: "Make a lasting impression.",
   description:
-    "Guest Amenities used for reference are more highly valued. Drive traffic to local event calendars and engage visitors more deeply in what the community has to offer. The data provides value far in excess of the item itself. ",
-  buttonText: "Get your design now",
-  buttonLink:
-    "https://www.promoplace.com/ws/ws.dll/Showroom?DistID=228063&StoreID=218372#5452899",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam libero augue, maximus efficitur mauris sollicitudin tempus. Phasellus consequat purus blandit eleifend posuere. Ut non arcu lobortis.",
+  buttonText: "Learn More",
 };
 
 const referralsData = {
@@ -30,7 +28,7 @@ const referralsData = {
   imgAlt: "Eugene Oasis logo converting to 5 star reviews",
   title: "Get more visitor referrals.",
   description:
-    "These products are passed along. Nearly two-thirds are given away after the original recipient is finished using the item. They are proven to add value to your guests stay and influence positive referals and reviews.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam libero augue, maximus efficitur mauris sollicitudin tempus. Phasellus consequat purus blandit eleifend posuere. Ut non arcu lobortis.",
   buttonText: "Browse our products",
   buttonLink: "https://hostworkspromo.orders.com/",
 };
@@ -54,7 +52,7 @@ export const ContentBlocks = (props) => {
         swap
         buttonType="scroll"
         handleClick={() =>
-          scrollTo("graphics", { behavior: "smooth", block: "center" })
+          scrollTo("contact", { behavior: "smooth", block: "center" })
         }
       />
       <Summary

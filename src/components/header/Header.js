@@ -6,16 +6,20 @@ import { TextLink } from "components/navbar/TextLink";
 export function Header() {
   return (
     <Container>
-      <HeaderImg
-        src="/hostworkspromo_banner_logo.jpeg"
-        alt="Hostworks Promo Icon"
-      />
-      <TextLink newTab header destination="https://hostworkspromo.orders.com">
-        {`Hostworks is designed to get you more booked nights ->`}
+      <LogoTitle>WatchDesign</LogoTitle>
+      <TextLink newTab header destination="https://reddit.com">
+        {`Timeless Technology ->`}
       </TextLink>
     </Container>
   );
 }
+
+const LogoTitle = styled.p`
+  margin: 0px;
+  font-weight: medium;
+  font-family: ${(props) => props.theme.font};
+  font-size: 2.5rem;
+`;
 
 const Container = styled.div`
   background-color: white;

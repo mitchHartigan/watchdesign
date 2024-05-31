@@ -4,9 +4,9 @@ import styled from "styled-components";
 export const ContactInfo = (props) => {
   return (
     <Container>
-      <Title>HostWorksPromo</Title>
+      <Title>WatchDesign</Title>
       <Subtitle href="mailto:sales@hostworkspromo.com">
-        sales@hostworkspromo.com
+        sales@watchdesign.com
       </Subtitle>
     </Container>
   );
@@ -16,7 +16,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin: 0px 20px 0px 20px;
 `;
 

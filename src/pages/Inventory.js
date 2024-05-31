@@ -22,6 +22,7 @@ export default function LearnMore() {
 }
 
 const Container = styled.div`
+  height: 100vh;
   overflow: hidden;
   box-sizing: border-box;
   display: flex;
@@ -31,7 +32,7 @@ const Container = styled.div`
 `;
 
 const CopyContainer = styled.div`
-  min-height: 70vh;
+  height: 100%;
   max-width: 100vw;
   box-sizing: border-box;
   display: flex;
