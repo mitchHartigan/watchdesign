@@ -7,7 +7,11 @@ export function Header() {
   return (
     <Container>
       <LogoTitle>WatchDesign</LogoTitle>
-      <TextLink newTab header destination="https://reddit.com">
+      <TextLink
+        newTab
+        header
+        destination="https://www.amazon.com/s?me=A28BONMGJJPBEQ&amp;marketplaceID=ATVPDKIKX0DER"
+      >
         {`Timeless Technology ->`}
       </TextLink>
     </Container>

@@ -9,8 +9,9 @@ const visitorData = {
   title: "Get more visitor engagement.",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam libero augue, maximus efficitur mauris sollicitudin tempus. Phasellus consequat purus blandit eleifend posuere. Ut non arcu lobortis.",
-  buttonText: "Browse our products",
-  buttonLink: "https://hostworkspromo.orders.com/",
+  buttonText: "View our Inventory",
+  buttonLink:
+    "https://www.amazon.com/s?me=A28BONMGJJPBEQ&marketplaceID=ATVPDKIKX0DER",
 };
 
 // link to main Graphics Package page once it has been updated by SAGE team.
@@ -21,6 +22,7 @@ const impressionData = {
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam libero augue, maximus efficitur mauris sollicitudin tempus. Phasellus consequat purus blandit eleifend posuere. Ut non arcu lobortis.",
   buttonText: "Learn More",
+  buttonLink: "/learn-more",
 };
 
 const referralsData = {
@@ -29,8 +31,9 @@ const referralsData = {
   title: "Get more visitor referrals.",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam libero augue, maximus efficitur mauris sollicitudin tempus. Phasellus consequat purus blandit eleifend posuere. Ut non arcu lobortis.",
-  buttonText: "Browse our products",
-  buttonLink: "https://hostworkspromo.orders.com/",
+  buttonText: "View our Inventory",
+  buttonLink:
+    "https://www.amazon.com/s?me=A28BONMGJJPBEQ&marketplaceID=ATVPDKIKX0DER",
 };
 
 function redirectTo(link) {
@@ -50,10 +53,8 @@ export const ContentBlocks = (props) => {
       <Summary
         data={impressionData}
         swap
-        buttonType="scroll"
-        handleClick={() =>
-          scrollTo("contact", { behavior: "smooth", block: "center" })
-        }
+        buttonType="redirect"
+        handleClick={() => redirectTo(impressionData.buttonLink)}
       />
       <Summary
         data={referralsData}
