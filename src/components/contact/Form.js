@@ -10,29 +10,44 @@ import { TextArea } from "./TextArea";
 const initialState = {
   name: "",
   email: "",
-  message: "",
   phone: "",
+  quantity: "",
+  movementType: "",
+  deliveryDate: "",
+  caseMaterial: "",
+  orderDetails: "",
   invalidName: false,
   invalidEmail: false,
-  invalidMessage: false,
   invalidPhone: false,
+  invalidQuantity: false,
+  invalidMovementType: false,
+  invalidDeliveryDate: false,
+  invalidCaseMaterial: false,
+  invalidOrderDetails: false,
   submitted: false,
   success: false,
 };
 
-export default function Form(props) {
-  const { interest } = props;
+export default function Form() {
   const [state, setState] = useState(initialState);
 
   const {
     name,
     email,
-    message,
     phone,
+    quantity,
+    movementType,
+    deliveryDate,
+    caseMaterial,
+    orderDetails,
     invalidName,
     invalidEmail,
-    invalidMessage,
     invalidPhone,
+    invalidQuantity,
+    invalidCaseMaterial,
+    invalidDeliveryDate,
+    invalidMovementType,
+    invalidOrderDetails,
     submitted,
     valid,
     success,
@@ -49,7 +64,18 @@ export default function Form(props) {
       return;
     }
 
-    const success = await POST_CONTACT_FORM(name, email, phone, message);
+    const fields = {
+      name,
+      email,
+      phone,
+      quantity,
+      movementType,
+      deliveryDate,
+      caseMaterial,
+      orderDetails,
+    };
+
+    const success = await POST_CONTACT_FORM(fields);
     if (success) setState({ ...state, submitted: false, success });
   }
 
@@ -63,8 +89,27 @@ export default function Form(props) {
   }
 
   function checkValidForm(state) {
-    const { invalidName, invalidEmail, invalidMessage, invalidPhone } = state;
-    return !(invalidName || invalidEmail || invalidPhone || invalidMessage);
+    const {
+      invalidName,
+      invalidEmail,
+      invalidPhone,
+      invalidQuantity,
+      invalidMovementType,
+      invalidDeliveryDate,
+      invalidCaseMaterial,
+      invalidOrderDetails,
+    } = state;
+
+    return !(
+      invalidName ||
+      invalidEmail ||
+      invalidPhone ||
+      invalidQuantity ||
+      invalidMovementType ||
+      invalidDeliveryDate ||
+      invalidCaseMaterial ||
+      invalidOrderDetails
+    );
   }
 
   function handleSubmit() {
@@ -73,7 +118,11 @@ export default function Form(props) {
       invalidName: name === "",
       invalidEmail: email === "",
       invalidPhone: phone === "",
-      invalidMessage: message === "" || message === undefined,
+      invalidQuantity: quantity === "",
+      invalidMovementType: movementType === "",
+      invalidDeliveryDate: deliveryDate === "",
+      invalidCaseMaterial: caseMaterial === "",
+      invalidOrderDetails: orderDetails === "",
       submitted: true,
     });
   }
@@ -106,13 +155,37 @@ export default function Form(props) {
         onChange={handleUpdate}
         invalid={invalidPhone}
       />
-      <TextArea
-        label="Message"
-        name="message"
+      <SeperatorText>Tell us about your order:</SeperatorText>
+      <FormInput
+        label="Movement Type"
+        name="movementType"
         onChange={handleUpdate}
-        invalid={invalidMessage}
-        interest={interest}
-      />
+        invalid={invalidMovementType}
+      ></FormInput>
+      <FormInput
+        label="Quantity"
+        name="quantity"
+        onChange={handleUpdate}
+        invalid={invalidQuantity}
+      ></FormInput>
+      <FormInput
+        label="Case Material"
+        name="caseMaterial"
+        onChange={handleUpdate}
+        invalid={invalidCaseMaterial}
+      ></FormInput>
+      <FormInput
+        label="Delivery Date"
+        name="deliveryDate"
+        onChange={handleUpdate}
+        invalid={invalidDeliveryDate}
+      ></FormInput>
+      <TextArea
+        label="Order Details"
+        name="orderDetails"
+        onChange={handleUpdate}
+        invalid={invalidOrderDetails}
+      ></TextArea>
 
       <ButtonContainer>
         <SubmitButton onClick={handleSubmit} submitted={submitted && valid}>
@@ -139,6 +212,11 @@ const Container = styled.div`
     width: 85vw;
     min-width: 10vw;
   }
+`;
+
+const SeperatorText = styled.p`
+  margin-top: 0px;
+  font-family: ${(props) => props.theme.font};
 `;
 
 const ButtonContainer = styled.div`
