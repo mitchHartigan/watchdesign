@@ -6,7 +6,7 @@ import { Summary } from "./Summary";
 const visitorData = {
   imgSrc: "new_era_watch.png",
   imgAlt: "watch image",
-  title: "Get more visitor engagement.",
+  title: "Lorem ipsum dolor sit amet",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam libero augue, maximus efficitur mauris sollicitudin tempus. Phasellus consequat purus blandit eleifend posuere. Ut non arcu lobortis.",
   buttonText: "View our Inventory",
@@ -18,7 +18,7 @@ const visitorData = {
 const impressionData = {
   imgSrc: "engineering.png",
   imgAlt: "Eugene Oasis branded products.",
-  title: "Make a lasting impression.",
+  title: "Lorem ipsum dolor sit amet",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam libero augue, maximus efficitur mauris sollicitudin tempus. Phasellus consequat purus blandit eleifend posuere. Ut non arcu lobortis.",
   buttonText: "Learn More",
@@ -28,7 +28,7 @@ const impressionData = {
 const referralsData = {
   imgSrc: "astro_watch.png",
   imgAlt: "Eugene Oasis logo converting to 5 star reviews",
-  title: "Get more visitor referrals.",
+  title: "Lorem ipsum dolor sit amet",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam libero augue, maximus efficitur mauris sollicitudin tempus. Phasellus consequat purus blandit eleifend posuere. Ut non arcu lobortis.",
   buttonText: "View our Inventory",
