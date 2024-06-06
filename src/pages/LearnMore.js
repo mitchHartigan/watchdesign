@@ -41,6 +41,10 @@ const CopyContainer = styled.div`
   align-items: center;
   padding: 0px 70px 10px 55px;
 
+  @media (max-width: 1500px) {
+    overflow-y: scroll;
+  }
+
   @media (max-width: 800px) {
     padding: 0px 15px 10px 15px;
   }

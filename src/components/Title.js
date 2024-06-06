@@ -2,10 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 export const Title = (props) => {
-  const { align, containerStyles, textStyles, spanWidth, children } = props;
+  const { align, containerStyles, textStyles, spanWidth, refProp, children } =
+    props;
 
   return (
-    <Container align={align} containerStyles={containerStyles}>
+    <Container align={align} containerStyles={containerStyles} ref={refProp}>
       <Text textStyles={textStyles}>{children}</Text>
       <Underline spanWidth={spanWidth} />
     </Container>

@@ -9,7 +9,7 @@ export const Menu = (props) => {
   return (
     <Container>
       <HeaderContainer>
-        <Title>HostWorks Promo</Title>
+        <Title>WatchDesign</Title>
         <CancelButton onClick={toggleMenu}>x</CancelButton>
       </HeaderContainer>
 
@@ -19,8 +19,11 @@ export const Menu = (props) => {
         <TextLink menu destination="/">
           Home
         </TextLink>
-        <TextLink menu destination="/why-hostworks">
-          Why Hostworks
+        <TextLink menu destination="/learn-more">
+          Learn More
+        </TextLink>
+        <TextLink menu destination="/inventory">
+          Inventory
         </TextLink>
         <ContactLink
           hamburger={true}
@@ -29,7 +32,7 @@ export const Menu = (props) => {
         >
           Contact
         </ContactLink>
-        <TextLink menu destination="/blog">
+        <TextLink menu destination="https://www.reddit.com">
           Blog
         </TextLink>
       </LinkContainer>

@@ -16,7 +16,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url(hero.png);
+  background: lightgray;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

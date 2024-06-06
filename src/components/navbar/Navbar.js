@@ -21,7 +21,7 @@ export const Navbar = (props) => {
             <ContactLink
               homepage={homepage}
               handleClick={() =>
-                scrollTo("contact", { behavior: "smooth", block: "center" })
+                scrollTo("contact", { behavior: "smooth", block: "start" })
               }
             >
               Contact

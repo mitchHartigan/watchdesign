@@ -17,12 +17,13 @@ export default function Contact(props) {
         if (visible) setVisible(true);
       }}
     >
-      <Container ref={refProp}>
+      <Container>
         <FadeIn delay="0" visible={visible}>
           <Title
-            containerStyles="margin-bottom: 40px;"
+            containerStyles="margin-bottom: 40px; margin-top: 40px;"
             align="center"
             spanWidth="120px"
+            refProp={refProp}
           >
             Contact Us
           </Title>
