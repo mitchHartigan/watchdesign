@@ -28,8 +28,7 @@ const referralsData = {
   title: "Our Inventory",
   description: "Click here to purchase INVENTORY products",
   buttonText: "View our Inventory",
-  buttonLink:
-    "https://www.amazon.com/s?me=A28BONMGJJPBEQ&marketplaceID=ATVPDKIKX0DER",
+  buttonLink: "https://www.ebay.com/str/sciencewatches",
 };
 
 function redirectTo(link) {
