@@ -10,7 +10,7 @@ export function Header() {
       <TextLink
         newTab
         header
-        destination="https://www.amazon.com/s?me=A28BONMGJJPBEQ&amp;marketplaceID=ATVPDKIKX0DER"
+        destination="https://www.ebay.com/str/sciencewatches"
       >
         {`Timeless Technology ->`}
       </TextLink>
