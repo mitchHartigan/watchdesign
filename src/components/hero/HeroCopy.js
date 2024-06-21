@@ -28,10 +28,12 @@ export const HeroCopy = () => {
 };
 
 const HeroTitle = styled.p`
-  margin: 10px 0px 10px 0px;
+  margin: 10px 0px 5px -2px;
   font-weight: medium;
-  font-size: 4rem;
+  font-size: 5rem;
   font-family: ${(props) => props.theme.font};
+  text-shadow: 1px 2px 2px #202020;
+  color: white;
 `;
 
 const Container = styled.div`
@@ -40,7 +42,7 @@ const Container = styled.div`
   justify-content: flex-start;
   align-items: center;
   margin-left: 10vw;
-  margin-top: -11vh;
+  margin-top: -8vh;
 
   @media (max-width: 900px) {
     margin-left: 0px;
@@ -71,6 +73,7 @@ const Subtitle = styled.h3`
   font-size: ${({ theme }) => theme.text.lg};
   font-weight: 400;
   margin-top: 0px;
+  color: white;
 
   @media (max-width: 900px) {
     font-size: ${({ theme }) => theme.text.md};
