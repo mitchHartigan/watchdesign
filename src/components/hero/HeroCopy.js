@@ -30,7 +30,7 @@ export const HeroCopy = () => {
 const HeroTitle = styled.p`
   margin: 10px 0px 5px -2px;
   font-weight: medium;
-  font-size: 5rem;
+  font-size: 5.5rem;
   font-family: ${(props) => props.theme.font};
   text-shadow: 1px 2px 2px #202020;
   color: white;
@@ -39,10 +39,12 @@ const HeroTitle = styled.p`
 const Container = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  margin-left: 10vw;
-  margin-top: -8vh;
+  padding: 0px 15px 25px 15px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
 
   @media (max-width: 900px) {
     margin-left: 0px;
@@ -53,7 +55,7 @@ const TitleContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 
   @media (max-width: 1450px) {
     align-items: center;
