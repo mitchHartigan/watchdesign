@@ -14,7 +14,7 @@ export const HeroCopy = () => {
     <Container>
       <TitleContainer>
         <FadeIn delay="300" visible>
-          <HeroTitle>WatchDesign</HeroTitle>
+          <TitleImg src="wd_logo_stacked.jpg" alt="wd logo stacked" />
         </FadeIn>
         <FadeIn delay="500" visible>
           <Subtitle>Timeless Technology.</Subtitle>
@@ -27,13 +27,9 @@ export const HeroCopy = () => {
   );
 };
 
-const HeroTitle = styled.p`
-  margin: 10px 0px 5px -2px;
-  font-weight: medium;
-  font-size: 5.5rem;
-  font-family: ${(props) => props.theme.font};
-  text-shadow: 1px 2px 2px #202020;
-  color: white;
+const TitleImg = styled.img`
+  height: auto;
+  width: 500px;
 `;
 
 const Container = styled.div`
@@ -41,10 +37,11 @@ const Container = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0px 15px 25px 15px;
+  padding: 15px 30px 30px 30px;
   border-radius: 10px;
   box-sizing: border-box;
-  backdrop-filter: blur(10px);
+  background: white;
+  box-shadow: 1px 1px 2px 1px lightgray;
 
   @media (max-width: 900px) {
     margin-left: 0px;
@@ -62,20 +59,11 @@ const TitleContainer = styled.div`
   }
 `;
 
-const Title = styled.img`
-  @media (max-width: 900px) {
-    width: 80%;
-    height: auto;
-    margin-bottom: 0px;
-  }
-`;
-
 const Subtitle = styled.h3`
   font-family: ${({ theme }) => theme.font};
   font-size: ${({ theme }) => theme.text.lg};
   font-weight: 400;
-  margin-top: 0px;
-  color: white;
+  margin: 10px 0px 10px 0px;
 
   @media (max-width: 900px) {
     font-size: ${({ theme }) => theme.text.md};
