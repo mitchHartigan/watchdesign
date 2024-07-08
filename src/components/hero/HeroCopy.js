@@ -11,19 +11,15 @@ export const HeroCopy = () => {
   }
 
   return (
-    <Container>
-      <TitleContainer>
-        <FadeIn delay="300" visible>
-          <TitleImg src="wd_logo_stacked.jpg" alt="wd logo stacked" />
-        </FadeIn>
-        <FadeIn delay="500" visible>
+    <FadeIn delay="400" visible>
+      <Container>
+        <TitleContainer>
+          <TitleImg src="wd_logo_stacked.png" alt="wd logo stacked" />
           <Subtitle>Timeless Technology.</Subtitle>
-        </FadeIn>
-        <FadeIn delay="700" visible>
           <Button handleClick={handleRedirect}>Learn More</Button>
-        </FadeIn>
-      </TitleContainer>
-    </Container>
+        </TitleContainer>
+      </Container>
+    </FadeIn>
   );
 };
 
@@ -37,11 +33,11 @@ const Container = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 15px 30px 30px 30px;
+  padding: 30px 50px 30px 50px;
   border-radius: 10px;
   box-sizing: border-box;
-  background: white;
-  box-shadow: 1px 1px 2px 1px lightgray;
+  background: ${({ theme }) => theme.backgroundColor};
+  box-shadow: 0px 0px 2px 1px #909090;
 
   @media (max-width: 900px) {
     margin-left: 0px;
@@ -63,7 +59,7 @@ const Subtitle = styled.h3`
   font-family: ${({ theme }) => theme.font};
   font-size: ${({ theme }) => theme.text.lg};
   font-weight: 400;
-  margin: 10px 0px 10px 0px;
+  margin: 20px 0px 10px 0px;
 
   @media (max-width: 900px) {
     font-size: ${({ theme }) => theme.text.md};
