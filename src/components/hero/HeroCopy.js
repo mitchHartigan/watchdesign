@@ -25,7 +25,7 @@ export const HeroCopy = () => {
 
 const TitleImg = styled.img`
   height: auto;
-  width: 500px;
+  width: 450px;
 `;
 
 const Container = styled.div`

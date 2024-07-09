@@ -6,7 +6,10 @@ import { TextLink } from "components/navbar/TextLink";
 export function Header() {
   return (
     <Container>
-      <LogoTitle>WatchDesign</LogoTitle>
+      <HeaderImg
+        src="wd_logo_horizontal.png"
+        alt="watch design logo horizontal"
+      />
       <TextLink
         newTab
         header
@@ -17,13 +20,6 @@ export function Header() {
     </Container>
   );
 }
-
-const LogoTitle = styled.p`
-  margin: 0px;
-  font-weight: medium;
-  font-family: ${(props) => props.theme.font};
-  font-size: 2.5rem;
-`;
 
 const Container = styled.div`
   background-color: white;
@@ -50,9 +46,10 @@ const Container = styled.div`
 
 const HeaderImg = styled.img`
   height: auto;
-  width: 350px;
+  width: 300px;
+  margin: 5px 0px 5px 0px;
 
   @media (max-width: 1200px) {
-    width: 250px;
+    width: 200px;
   }
 `;

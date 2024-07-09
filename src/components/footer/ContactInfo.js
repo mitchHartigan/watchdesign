@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-export const ContactInfo = (props) => {
+export const ContactInfo = () => {
   return (
     <Container>
-      <Title>WatchDesign</Title>
+      <TitleImg src="wd_logo_horizontal.png" alt="hostworks title horizontal" />
       <Subtitle href="mailto:sales@hostworkspromo.com">
         sales@watchdesign.com
       </Subtitle>
@@ -18,6 +18,12 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0px 20px 0px 20px;
+`;
+
+const TitleImg = styled.img`
+  height: auto;
+  width: 250px;
+  margin-bottom: 5px;
 `;
 
 const Title = styled.h3`
