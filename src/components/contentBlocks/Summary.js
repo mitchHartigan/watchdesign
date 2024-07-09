@@ -41,9 +41,7 @@ export const Summary = (props) => {
             <Button handleClick={handleClick}>{buttonText}</Button>
           )}
           {buttonType === "redirect" && (
-            <LinkButton href={buttonLink} target="_blank">
-              {buttonText}
-            </LinkButton>
+            <LinkButton href={buttonLink}>{buttonText}</LinkButton>
           )}
         </FadeIn>
       </DescriptionContainer>
