@@ -21,12 +21,15 @@ export const Navbar = (props) => {
             <ContactLink
               homepage={homepage}
               handleClick={() =>
-                scrollTo("contact", { behavior: "smooth", block: "center" })
+                scrollTo("contact", { behavior: "smooth", block: "start" })
               }
             >
               Contact
             </ContactLink>
-            <TextLink destination="https://www.linkedin.com/in/alexgoldberg/recent-activity/all/">
+            <TextLink
+              newTab
+              destination="https://www.linkedin.com/in/alexgoldberg/recent-activity/all/"
+            >
               Blog
             </TextLink>
           </TextLinkContainer>

@@ -27,8 +27,8 @@ const referralsData = {
   imgAlt: "Eugene Oasis logo converting to 5 star reviews",
   title: "Our Inventory",
   description: "Click here to purchase INVENTORY products",
-  buttonText: "View our Inventory",
-  buttonLink: "https://www.ebay.com/str/sciencewatches",
+  buttonText: "View Inventory",
+  buttonLink: "/inventory",
 };
 
 function redirectTo(link) {
