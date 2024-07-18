@@ -70,7 +70,11 @@ export default function Homepage() {
         handleOrder={handleOrder}
         closeModal={closeModal}
       />
-      <Hero />
+      <Hero
+        handleClick={() =>
+          scrollTo("contact", { behavior: "smooth", block: "start" })
+        }
+      />
       <ContentBlocks scrollTo={scrollTo} />
       <Contact interest={interest} refProp={contactRef} />
       <Footer />

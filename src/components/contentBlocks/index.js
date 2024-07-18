@@ -50,7 +50,7 @@ export const ContentBlocks = (props) => {
         swap
         buttonType="scroll"
         handleClick={() =>
-          scrollTo("contact", { behavior: "smooth", block: "center" })
+          scrollTo("contact", { behavior: "smooth", block: "start" })
         }
       />
 
