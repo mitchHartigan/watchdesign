@@ -14,9 +14,7 @@ export const HeroCopy = () => {
     <FadeIn delay="400" visible>
       <Container>
         <TitleContainer>
-          <TitleImg src="wd_logo_stacked.png" alt="wd logo stacked" />
-          <Subtitle>Timeless Technology.</Subtitle>
-          <Button handleClick={handleRedirect}>Learn More</Button>
+          <TitleImg src="wd_logo_horizontal.png" alt="wd logo horizontal" />
         </TitleContainer>
       </Container>
     </FadeIn>
@@ -33,7 +31,8 @@ const Container = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 30px 50px 30px 50px;
+  margin-top: 4vh;
+  padding: 15px 20px 15px 20px;
   border-radius: 10px;
   box-sizing: border-box;
   background: ${({ theme }) => theme.backgroundColor};
