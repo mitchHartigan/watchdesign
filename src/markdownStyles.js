@@ -45,7 +45,7 @@ export const mdPre = styled.pre`
 
 export const mdImg = styled.img`
   width: auto;
-  max-height: 420px;
+  max-height: 300px;
 
   @media (max-width: 900px) {
     max-height: 200px;
