@@ -28,7 +28,7 @@ export default function Homepage() {
     if (hash === "#contact") {
       setTimeout(() => {
         scrollTo("contact", { block: "start", behavior: "smooth" });
-      }, 0);
+      }, 50);
     }
   }, []);
 
