@@ -16,10 +16,10 @@ export default function Homepage() {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState(package1);
   const contactRef = useRef(null);
-  const graphicsRef = useRef(null);
+  const learnMoreRef = useRef(null);
   const [sectionTargets, setSectionTargets] = useState({
     contact: contactRef,
-    graphics: graphicsRef,
+    learnMore: learnMoreRef,
   });
   const [interest, setInterest] = useState(""); // Graphics package 1, etc
 
@@ -72,10 +72,10 @@ export default function Homepage() {
       />
       <Hero
         handleClick={() =>
-          scrollTo("contact", { behavior: "smooth", block: "start" })
+          scrollTo("learnMore", { behavior: "smooth", block: "start" })
         }
       />
-      <ContentBlocks scrollTo={scrollTo} />
+      <ContentBlocks scrollTo={scrollTo} refProp={learnMoreRef} />
       <Contact interest={interest} refProp={contactRef} />
       <Footer />
     </>

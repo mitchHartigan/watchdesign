@@ -36,10 +36,10 @@ function redirectTo(link) {
 }
 
 export const ContentBlocks = (props) => {
-  const { scrollTo } = props;
+  const { scrollTo, refProp } = props;
 
   return (
-    <Container>
+    <Container ref={refProp}>
       <Summary
         data={visitorData}
         buttonType="redirect"
