@@ -72,8 +72,8 @@ const Container = styled.div`
 
 const TitleContainer = styled.div`
   top: 48vh;
-  padding: 10px 15px 10px 15px;
-  border-radius: 10px;
+  padding: 10px 15px 10px 11px;
+  border-radius: 7px;
   box-sizing: border-box;
   background: ${({ theme }) => theme.backgroundColor};
   box-shadow: 0px 0px 2px 1px #909090;
