@@ -51,6 +51,10 @@ const ChevronText = styled.p`
 const TitleImg = styled.img`
   height: auto;
   width: 450px;
+
+  @media (max-width: 800px) {
+    width: 200px;
+  }
 `;
 
 const Chevron = styled.img`
