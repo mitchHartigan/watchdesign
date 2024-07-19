@@ -25,7 +25,11 @@ export default function Homepage() {
 
   useEffect(() => {
     const hash = document.location.hash;
-    if (hash === "#contact") scrollTo("contact", { block: "center" });
+    if (hash === "#contact") {
+      setTimeout(() => {
+        scrollTo("contact", { block: "start", behavior: "smooth" });
+      }, 0);
+    }
   }, []);
 
   function pauseScroll(paused) {
