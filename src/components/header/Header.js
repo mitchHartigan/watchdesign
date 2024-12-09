@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import { TextLink } from "components/navbar/TextLink";
-
 export function Header() {
   return (
     <Container>
@@ -10,13 +8,6 @@ export function Header() {
         src="wd_logo_horizontal.png"
         alt="watch design logo horizontal"
       />
-      <TextLink
-        newTab
-        header
-        destination="https://www.ebay.com/str/sciencewatches"
-      >
-        {`Timeless Technology ->`}
-      </TextLink>
     </Container>
   );
 }
