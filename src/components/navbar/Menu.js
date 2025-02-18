@@ -33,6 +33,7 @@ export const Menu = (props) => {
           Contact
         </ContactLink>
         <TextLink
+          newTab
           menu
           destination="https://www.linkedin.com/in/alexgoldberg/recent-activity/all/"
         >
