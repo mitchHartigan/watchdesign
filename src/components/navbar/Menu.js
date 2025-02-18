@@ -32,7 +32,10 @@ export const Menu = (props) => {
         >
           Contact
         </ContactLink>
-        <TextLink menu destination="https://www.reddit.com">
+        <TextLink
+          menu
+          destination="https://www.linkedin.com/in/alexgoldberg/recent-activity/all/"
+        >
           Blog
         </TextLink>
       </LinkContainer>

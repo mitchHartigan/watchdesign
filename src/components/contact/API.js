@@ -5,7 +5,7 @@ export const POST_CONTACT_FORM = async (fields) => {
     subject: "New submission from Watch Design",
     access_key: process.env.REACT_APP_WEB3FORMS_ACCESS_KEY,
   };
-  console.log("formData", formData);
+  // console.log("formData", formData);
   let result = await fetch(url, {
     method: "POST",
     headers: {
@@ -15,6 +15,6 @@ export const POST_CONTACT_FORM = async (fields) => {
     body: JSON.stringify(formData),
   });
   result = await result.json();
-  console.log("result", result);
+  // console.log("result", result);
   if (result.success) return true;
 };
